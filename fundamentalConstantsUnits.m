@@ -1,0 +1,15 @@
+cm = 10^-2;
+mm = 10^-3;
+um = 10^-6;
+nm = 10^-9;
+ns = 10^-9;
+ps=10^-12;
+fs=10^-15;
+as=10^-18;
+THz = 10^12;
+PHz = 10^15;
+c = 299792458;       % speed of light in free space (meters/second)
+Mu0 = 4.0*pi*1e-7;   % permeability of free space
+Ep0 = 1/(c*c*Mu0);   % permittivity of free space
+Nu0 = sqrt(Mu0/Ep0); % impedance of free space
+tep = 2*Ep0;

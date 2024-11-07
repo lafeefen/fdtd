@@ -1,0 +1,33 @@
+function [DT,Dx,Dy,Dz,Jx,Jy,Jz,ET,Ex,Ey,Ez,Bx,By,Bz,Hx,Hy,Hz,CDxy,CDyx,CDyz,CDzy,CDzx,CDxz,CHxy,CHyx,CHyz,CHzy,CHzx,CHxz,...
+    G_Distrtn] = intialize_E_H_Fields_CPML(Nx,Ny,Nz)
+    [DT] = deal(zeros(Nx+1,Ny+1,Nz+1)); % Dx cells
+    [ET] = deal(zeros(Nx+1,Ny+1,Nz+1)); % Dx cells
+    [Dx] = deal(zeros(Nx,Ny+1,Nz+1)); % Dx cells
+    [Dy] = deal(zeros(Nx+1,Ny,Nz+1)); % Dy cells
+    [Dz] = deal(zeros(Nx+1,Ny+1,Nz)); % Dz cells
+    [Ex] = deal(zeros(Nx,Ny+1,Nz+1)); % Ex cells
+    [Ey] = deal(zeros(Nx+1,Ny,Nz+1)); % Ey cells
+    [Ez] = deal(zeros(Nx+1,Ny+1,Nz)); % Ez cells
+    [Jx] = deal(zeros(Nx,Ny+1,Nz+1)); % Dx cells
+    [Jy] = deal(zeros(Nx+1,Ny,Nz+1)); % Dy cells
+    [Jz] = deal(zeros(Nx+1,Ny+1,Nz)); % Dz cells
+    [Bx] = deal(zeros(Nx+1,Ny,Nz));   % Bx cells
+    [By] = deal(zeros(Nx,Ny+1,Nz));   % By cells
+    [Bz] = deal(zeros(Nx,Ny,Nz+1));   % Bz cells
+    [Hx] = deal(zeros(Nx+1,Ny,Nz));   % Hx cells
+    [Hy] = deal(zeros(Nx,Ny+1,Nz));   % Hy cells
+    [Hz] = deal(zeros(Nx,Ny,Nz+1));   % Hz cells
+    [CDyx] = deal(zeros(Nx+1,Ny,Nz)); % CDyx cells
+    [CDxy] = deal(zeros(Nx,Ny+1,Nz)); % CDxy cells
+    [CDxz] = deal(zeros(Nx,Ny,Nz+1)); % CDxz cells
+    [CDzx] = deal(zeros(Nx+1,Ny,Nz)); % CDzx cells
+    [CDzy] = deal(zeros(Nx,Ny+1,Nz)); % CDzy cells
+    [CDyz] = deal(zeros(Nx,Ny,Nz+1)); % CDyz cells
+    [CHyx] = deal(zeros(Nx,Ny,Nz+1)); % Ex cells
+    [CHxy] = deal(zeros(Nx,Ny,Nz+1)); % Ey cells
+    [CHxz] = deal(zeros(Nx,Ny+1,Nz)); % Ez cells
+    [CHzx] = deal(zeros(Nx,Ny+1,Nz)); % Ex cells
+    [CHzy] = deal(zeros(Nx+1,Ny,Nz)); % Ey cells
+    [CHyz] = deal(zeros(Nx+1,Ny,Nz)); % Ez cells
+    [G_Distrtn] = deal(zeros(Nx+1,Ny+1));
+end
